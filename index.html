@@ -96,6 +96,8 @@
         //  ready TMA
         Telegram.WebApp.ready();
 
+        console.log('99', Telegram.WebApp.initData)
+
         // Event occurs whenever theme settings are changed in the user's Telegram app (including switching to night mode).
         Telegram.WebApp.onEvent('themeChanged', function() {
             document.documentElement.className = Telegram.WebApp.colorScheme;
