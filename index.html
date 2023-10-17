@@ -121,8 +121,7 @@
             console.log('168--', opt)
         })
 
-        const initData = Telegram.WebApp.initData
-        console.log(initData)
+        const initData = decodeURIComponent(Telegram.WebApp.initData)
 
         Telegram.WebApp.MainButton.onClick(function () {
             Telegram.WebApp.showAlert('Main Button was clicked')
