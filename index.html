@@ -106,20 +106,20 @@
             text: 'Main Button'
         });
 
-        Telegram.WebApp.onEvent('writeAccessRequested',function (event) {
-            console.log('157--', event)
-        });
-        Telegram.WebApp.onEvent('contactRequested', function (event) {
-            console.log('160--', event)
-        });
+        //Telegram.WebApp.onEvent('writeAccessRequested',function (event) {
+            //console.log('157--', event)
+        //});
+        //Telegram.WebApp.onEvent('contactRequested', function (event) {
+            //console.log('160--', event)
+        //});
 
-        Telegram.WebApp.requestWriteAccess(function (opt){
-            console.log('164--', opt)
-        })
+        //Telegram.WebApp.requestWriteAccess(function (opt){
+            //console.log('164--', opt)
+        //})
 
-        Telegram.WebApp.requestContact(function (opt){
-            console.log('168--', opt)
-        })
+        //Telegram.WebApp.requestContact(function (opt){
+            //console.log('168--', opt)
+        //})
 
         const initData = decodeURIComponent(Telegram.WebApp.initData)
         console.log(initData, 'initdata')
