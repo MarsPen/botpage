@@ -123,6 +123,11 @@
 
         const initData = decodeURIComponent(Telegram.WebApp.initData)
         console.log(initData, 'initdata')
+        Telegram.WebApp.requestContact(function (a, b) {
+            console.log('a', a)
+            console.log('b', a)
+        })
+        
 
         Telegram.WebApp.MainButton.onClick(function () {
             Telegram.WebApp.showAlert('Main Button was clicked')
