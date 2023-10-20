@@ -69,7 +69,7 @@
         </div>
         <h1>Modals</h1>
         <button onclick="Telegram.WebApp.showAlert('Hello World!');">Launch Alert</button>
-        <button onclick="showPopup();">Launch Popup</button>
+        <button onclick="Telegram.WebApp.switchInlineQuery(['users', 'bots', 'groups', 'channels'])">Launch Popup</button>
 
         <h1>Links</h1>
         <ul>
@@ -127,8 +127,7 @@
             console.log('a', a)
             console.log('b', a)
         })
-        
-        Telegram.WebApp.switchInlineQuery(['users', 'bots', 'groups', 'channels'])
+    
         Telegram.WebApp.MainButton.onClick(function () {
             Telegram.WebApp.showAlert('Main Button was clicked')
         });	
