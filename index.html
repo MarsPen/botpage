@@ -69,7 +69,7 @@
         </div>
         <h1>Modals</h1>
         <button onclick="Telegram.WebApp.showAlert('Hello World!');">Launch Alert</button>
-        <button onclick="Telegram.WebApp.switchInlineQuery(['users', 'bots', 'groups', 'channels'])">Launch Popup</button>
+        <button onclick="toggleMainButton1();">Launch Popup</button>
 
         <h1>Links</h1>
         <ul>
@@ -157,6 +157,10 @@
                 Telegram.WebApp.MainButton.show();
             }
         };
+        function toggleMainButton1() {
+            Telegram.WebApp.switchInlineQuery(['users', 'bots', 'groups', 'channels']) 
+        }
+
 
         function setViewportData() {
             var sizeEl = document.getElementById('viewport-params-size');
